@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Create from './Pages/Create';
@@ -8,7 +8,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 
 const App = () => {
-
+ const [id,setId] = useState(0)
   return (
     <div>
       <BrowserRouter>
