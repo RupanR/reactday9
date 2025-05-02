@@ -16,9 +16,9 @@ const App = () => {
         <Navbar />
       </div>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home setId={setId}/>} />
         <Route path='/create' element={<Create />} />
-        <Route path='/edit/:id' element={<Edit />} />
+        <Route path='/edit/:id' element={<Edit id={id}/>} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <div>
